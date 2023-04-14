@@ -7,12 +7,15 @@
   <link rel="stylesheet" type="text/css" href="base.css">
   <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
   <style>
-    .box {display: flex;}
-    model-viewer {width: 800px; height: 550px; margin:0, auto; }
+    .box {display: inline;}
+    model-viewer {width: 800px; height: 550px; margin:0; }
   </style>
 </head>
 <body>
-  <h1>hello! welcome to my room :) </h1>
-  <model-viewer src="resources/tinyroom/scene.gltf" camera-controls auto-rotate disable-zoom></model-viewer>
+  <h1>Hello! Welcome to my room :) </h1>
+  <small>*It might take a second to load</small>
+  <model-viewer src="resources/tinyroom/scene.gltf" camera-controls auto-rotate disable-zoom ></model-viewer>
+  <h3 class="inline">Built with Blender</h3>
+  <p>Implemented through Google Model Viewer</p>
 </body>
 </html>

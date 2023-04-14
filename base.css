@@ -1,6 +1,25 @@
+* {
+    margin:0;
+    padding:0;
+    outline:0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
 body {
+    margin-left: 3rem;
+    margin-top: 1.5rem;
     background-color: rgb(105, 149, 119);
     color: bisque;
+    font-family: 'Ubuntu', 'Roboto','Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: normal;
+}
+p {
+    margin: 1rem;
+    font-size: medium;
+}
+.inline {
+    display: inline-block;
 }
 .stlwv2-model {
     position: relative;
