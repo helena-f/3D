@@ -26,7 +26,10 @@
         r(t)is the setpoint. y(t)is the process variable.
         u(t) is the control variable, adjusted by PID values.        
        </p>
-
+    <img src="resources/PIDCode.png" alt="code">
+    <p>P: Current; Proportional to the current value of the SP − PV error e(t); The bigger the error (target – current), the bigger the feedback force.</p>
+    <p>I: History; Accounts for past values of the SP − PV error and integrates them over time to produce the I term; The bigger the accumulative error, the bigger the feedback force.</p>
+    <p>D: Future; Best estimate of the future trend of the SP − PV error, based on its current rate of change; The faster the error reduces, the less feedback force should be.</p>
 </body>
 
 </html>
