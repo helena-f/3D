@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>3D on a Webpage</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="base.css">
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/combine/npm/tone@14.7.58,npm/@magenta/music@1.23.1/es6/core.js,npm/focus-visible@5,npm/html-midi-player@1.4.0"></script>
+
+</head>
+<body>
+  <h1>Composer</h1>
+  <p>Click to listen.</p>
+  <midi-player
+  src="resources/music.MID"
+  sound-font visualizer="#myPianoRollVisualizer">
+</midi-player>
+<midi-visualizer type="piano-roll" id="myPianoRollVisualizer" 
+  src="resources/music.MID">
+</midi-visualizer>
+<h2>How was this done?</h2>
+<p>With some friends from orchestra, I curated a database of MIDI files transcribed from real jazz recordings. Then, we experimented with both WaveNet and Long Short Term Memory architectures to build our Models. </p>
+<p>Each note is converted to an integer. The data is run through multiple convolution layers and the model outputs its predicted melody.</p>
+<img src="resources/composer.png" alt="code" width="500px">
+</body>
+</html>

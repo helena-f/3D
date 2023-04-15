@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>3D on a Webpage</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="base.css">
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+
+</head>
+<body>
+  <h1>Implementations of Algorithms</h1>
+  <h2>1. Odometry</h2>
+  <p>The problem with relying on mecanum wheel motor encoders is its inaccuracy and single-direction tracking. 
+    Free-wheel odometry encoders can track front-back and left-right motion.</p>
+    <img src="resources/odometry.png" alt="wheels" width="400px">
+    <p>The robot is recorded in three dimensions, consisting of six elements. Three values define the position and three rotation angles define the rotation about the X, Y, and Z axis. Note that the order of the rotations matters to the orientation. These three positions are recorded in a 4x4 vector matrix.
+
+        It is important to keep track of which frame of reference is being used. The global coordinate frame is relative to the robot’s surroundings. We start robotics experiments with the robot at position (0, 0) and facing in the direction of the axis. The local coordinate frame is relative to the robot. We use the local coordinates when measuring the movement or setting the velocity of the wheels.
+        </p>
+    <h2>2. Pure Pursuit</h2>
+    <p>Pure pursuit is an algorithm that calculates the curvature the robot will move from its current position to its next location. Using “look ahead distance,” which is where the algorithm got its name from (pure pursuit: pursuing the moving point ahead of it), the algorithm works by choosing a point ahead of the robot on the path.  
+    </p>
+    <img src="resources/pp.png" alt="pure pursuit" width="600px">
+
+</body>
+</html>

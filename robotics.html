@@ -21,15 +21,18 @@
     <h3>1. Moving by PID</h3>
     <p>PID is integral to all the movements of our robot, making the autonomous consistent and precise. The most important aspect of this mechanism is guaranteeing consistent rpm on our motors, ensuring that the robot will always move with the same power, distance, and angle, regardless of the voltage of the battery, negating all inconsistencies.</p>
     <p>A Proportional-Integral-Derivative controller is a control loop mechanism that calculates the error value, which is the difference between the setpoint (the desired value for the PV) and the process variable (a quantity used as a feedback), and adjusts according to the PID values, hence the name. Basically, it applies a responsive correction to a control function.</p>
-    <img src="resources/PID.png" alt="PID EQ" class="inline">
+    <img src="resources/PID.png" alt="PID EQ" class="inline" width="400px">
     <p>Here, e(t) is the calculated error value e(t)=r(t)-y(t)
         r(t)is the setpoint. y(t)is the process variable.
         u(t) is the control variable, adjusted by PID values.        
        </p>
-    <img src="resources/PIDCode.png" alt="code">
+    <img src="resources/PIDCode.png" alt="code" width="600px">
     <p>P: Current; Proportional to the current value of the SP − PV error e(t); The bigger the error (target – current), the bigger the feedback force.</p>
     <p>I: History; Accounts for past values of the SP − PV error and integrates them over time to produce the I term; The bigger the accumulative error, the bigger the feedback force.</p>
     <p>D: Future; Best estimate of the future trend of the SP − PV error, based on its current rate of change; The faster the error reduces, the less feedback force should be.</p>
+    <h3>2. Applying PID</h3>
+    <p>Accurate movement according to robot encoders is applied through constant motor power updates.</p>
+    <img src="resources/move.png" alt="code" width="600px">
 </body>
 
 </html>
