@@ -9,6 +9,8 @@
 </head>
 <body>
   <h1>Frameworks, Libraries, and Models for Image Recognition</h1>
+  <h4 class="note">*Included are small snippets of our thousands of lines of code</h4>
+
   <p>Each library has its strengths and weaknesses. Vuforia was accurate, but only for stationary images. TensorFlow was inaccurate, but fast. OpenCV was much more accurate and still processed quickly.</p>
   <h2>1. Vuforia</h2>
     <p>The Vuforia Engine detects and tracks an image by comparing extracted natural features from our live feed against our compiled image database of an element.</p>
@@ -20,7 +22,8 @@
     <p>OpenCV is a huge open-source library for computer vision, machine learning, and image processing. 
         We take live footage from the robot controller phone and feed it through a pipeline. 
         Then, using a comparative image overlay, the algorithm calculates if and where certain elements are on the field. 
-        It compares the live images with custom template images to determine confidence rate based on shape, color, and size. </p>
+        It compares the live images with custom template images to determine confidence rate based on shape, color, and size.
+    Here is an example of our implementation. </p>
         <img src="resources/cv.png" alt="" width="400px">
 
 </body>

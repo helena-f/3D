@@ -18,6 +18,9 @@ p {
     margin: 1rem;
     font-size: medium;
 }
+.note {
+    color: aliceblue;
+}
 .inline {
     display: inline-block;
 }
