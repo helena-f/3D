@@ -22,6 +22,9 @@
 <h2>How was this done?</h2>
 <p>With some friends from orchestra, I curated a database of MIDI files transcribed from real jazz recordings. Then, we experimented with both WaveNet and Long Short Term Memory architectures to build our Models. </p>
 <p>Each note is converted to an integer. The data is run through multiple convolution layers and the model outputs its predicted melody.</p>
+<p>Given the sequence of the amplitude values, WaveNet tries to predict the successive amplitude value. The building blocks of WaveNet are Causal Dilated 1D Convolution layers.</p>
+<p>Here is an example of our convolution matrix for training.</p>
 <img src="resources/composer.png" alt="code" width="500px">
+
 </body>
 </html>
